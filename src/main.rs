@@ -48,7 +48,7 @@ fn main() -> std::io::Result<()> {
             write!(file, "{},{}\n", receiver.host, result)?;
         } else {
             println!("{},,", receiver.host);
-            write!(file, "{},,\n", receiver.host)?;
+            write!(file, "{},N/D,N/D\n", receiver.host)?;
         }
     }
 
